@@ -1,14 +1,6 @@
-﻿namespace oc_2_wp_csv_converter {
+﻿namespace sw2wc {
     partial class FrmMain {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing) {
             if (disposing && (components != null)) {
                 components.Dispose();
@@ -67,7 +59,6 @@
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(247, 160);
             this.listBox.TabIndex = 1;
-            this.listBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             this.listBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox_DragDrop);
             this.listBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox_DragEnter);
             // 
@@ -208,8 +199,8 @@
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Superwave to WooCommerce CSV converter, 15:30, 30.09.2017";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Superwave to WooCommerce CSV converter";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

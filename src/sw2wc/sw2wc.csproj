@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{737A486C-48C7-4415-B072-F45D22ED9E68}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>oc_2_wp_csv_converter</RootNamespace>
-    <AssemblyName>oc_2_wp_csv_converter</AssemblyName>
+    <RootNamespace>sw2wc</RootNamespace>
+    <AssemblyName>sw2wc</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
