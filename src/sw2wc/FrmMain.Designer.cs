@@ -208,7 +208,7 @@
             this.MaximizeBox = false;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Superwave to WooCommerce CSV converter, 1:55, 30.09.2017";
+            this.Text = "Superwave to WooCommerce CSV converter, 15:30, 30.09.2017";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

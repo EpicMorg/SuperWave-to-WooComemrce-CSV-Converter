@@ -114,7 +114,7 @@ namespace oc_2_wp_csv_converter {
                     price = price.Trim(' ', '$');
                     //if (price == "нет") continue; // это если кто-то будет писать НЕТ в значение инта..
                     double result = 0;
-                    Double.TryParse(price, NumberStyles.None, provider, out result);
+                    Double.TryParse(price, NumberStyles.Any, provider, out result);
                     price = (result * USD).ToString();
                 } else {
                     price = price.Replace("руб", "").Trim('.', ' ', '"', '=');
