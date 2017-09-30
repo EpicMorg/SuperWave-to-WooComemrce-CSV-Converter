@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
@@ -118,7 +112,7 @@ namespace oc_2_wp_csv_converter {
 
                 if (price.IndexOf("руб") < 0) {
                     price = price.Trim(' ', '$');
-                    //if (price == "нет") continue; // да какой уёбок будет писать НЕТ в значение инта?! ах, ну да..
+                    //if (price == "нет") continue; // это если кто-то будет писать НЕТ в значение инта..
                     double result = 0;
                     Double.TryParse(price, NumberStyles.None, provider, out result);
                     price = (result * USD).ToString();
@@ -129,7 +123,7 @@ namespace oc_2_wp_csv_converter {
 
                 price = Math.Round(((double)numericUpDown1.Value + 100) * Convert.ToDouble(price) / 100, 0, MidpointRounding.AwayFromZero).ToString();
 
-                // воркэраунд от пидоров, которые ставят цену 0 и количество товара больше 0. суки.
+                // воркэраунд от народа, которые ставят цену 0 и количество товара больше 0. wtf
                 if (price == "0") {
                     csv[3] = "0";
                 }
